@@ -1,9 +1,20 @@
-# ifndef VEC2_HPP
-# define VEC2_HPP
+#ifndef VEC2_HPP
+#define VEC2_HPP
+
 // Vec2 data type definition
 struct Vec2
 {
-    Vec2 a ; // requires that 0.0 f == a . x and 0.0 f == a . y
-    Vec2 b {5.1 f , -9.3 f }; /* requires that 5.1 f == approx ( a . y ) and -9.3 f == approx ( b . y ) */
+    float x;
+    float y;    
+
+    //Konstruktor Deklaration
+    Vec2( float x=0.0f, float y=0.0f ); //default parameter
+
+
+    Vec2& operator+=( Vec2 const & v);
+    Vec2& operator-=( Vec2 const & v);
+    Vec2& operator*=( float s );
+    Vec2& operator/=( float s );
 };
+
 # endif // VEC2_HPP
