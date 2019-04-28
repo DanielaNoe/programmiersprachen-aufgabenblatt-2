@@ -25,5 +25,3 @@ target_link_libraries(tests
   nanovg
   ${OPENGL_LIBRARIES}
   )
-
-
