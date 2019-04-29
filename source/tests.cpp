@@ -66,6 +66,17 @@ TEST_CASE( "/= Operator" ) {
     REQUIRE( objekt8.y  == Approx(-4.0f) );
 }
 
+TEST_CASE( "+ Operator" ) {
+    
+    Vec2 objekt9{2.0f, -1.0f};
+    Vec2 objekt10{7.0f, 3.0f};
+
+    Vec2 objekt11 = objekt9 + objekt10;
+	
+    REQUIRE( objekt11.x  == Approx(9.0f) );
+    REQUIRE( objekt11.y  == Approx(2.0f) );
+}
+
 
 int main(int argc, char *argv[])
 {
